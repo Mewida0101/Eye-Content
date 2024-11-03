@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نشاط توصيل أجزاء العين</title>
+  <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+  <div class="page">
+    <h3>اسحب الأسماء وأفلتها في مكانها الصحيح حسب رقمها على صورة العين</h3>
+
+    <div class="container">
+      <img src="imgs/eye-diagram.png" alt="صورة العين" class="eye-diagram">
+      <!-- صورة العين مع مناطق الإسقاط -->
+      <div class="ear-parts2">
+        <div class="dropzone" data-number="1" data-part="العدسة">1</div>
+        <div class="dropzone" data-number="2" data-part="الحجرة الأمامية">2</div>
+        <div class="dropzone" data-number="3" data-part="القرنية">3</div>
+        <div class="dropzone" data-number="4" data-part="الحدقة">4</div>
+        <div class="dropzone" data-number="5" data-part="القزحية">5</div>
+        <div class="dropzone" data-number="6" data-part="العضلة الهدبية">6</div>
+        <div class="dropzone" data-number="7" data-part="السائل الزجاجي">7</div>
+        <div class="dropzone" data-number="8" data-part="المشيمية">8</div>
+        <div class="dropzone" data-number="9" data-part="الشبكية">9</div>
+        <div class="dropzone" data-number="10" data-part="البقعة">10</div>
+        <div class="dropzone" data-number="11" data-part="النقطة العمياء">11</div>
+        <div class="dropzone" data-number="12" data-part="العصب البصري">12</div>
+        <div class="dropzone" data-number="13" data-part="الصلبة">13</div>
+      </div>
+      <!-- الأجزاء المتاحة للسحب -->
+      <div class="ear-parts">
+        <div class="part" id="ey7" data-part="السائل الزجاجي">السائل الزجاجي</div>
+        <div class="part" id="ey10" data-part="البقعة">البقعة</div>
+        <div class="part" id="ey4" data-part="الحدقة">الحدقة</div>
+        <div class="part" id="ey1" data-part="العدسة">العدسة</div>
+        <div class="part" id="ey11" data-part="النقطة العمياء">النقطة العمياء</div>
+        <div class="part" id="ey9" data-part="الشبكية">الشبكية</div>
+        <div class="part" id="ey2" data-part="الحجرة الأمامية">الحجرة الأمامية</div>
+        <div class="part" id="ey13" data-part="الصلبة">الصلبة</div>
+        <div class="part" id="ey3" data-part="القرنية">القرنية</div>
+        <div class="part" id="ey6" data-part="العضلة الهدبية">العضلة الهدبية</div>
+        <div class="part" id="ey8" data-part="المشيمية">المشيمية</div>
+        <div class="part" id="ey5" data-part="القزحية">القزحية</div>
+        <div class="part" id="ey12" data-part="العصب البصري">العصب البصري</div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="correctSound" src="sounds/correct.mp3"></audio>
+  <audio id="errorSound" src="sounds/error.mp3"></audio>
+
+  <script src="JS/script.js"></script>
+</body>
+
+</html>
